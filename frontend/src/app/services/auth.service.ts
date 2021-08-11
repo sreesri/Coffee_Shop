@@ -28,6 +28,7 @@ export class AuthService {
     link += 'response_type=token&';
     link += 'client_id=' + this.clientId + '&';
     link += 'redirect_uri=' + this.callbackURL + callbackPath;
+    link += '&prompt=login';
     return link;
   }
 
